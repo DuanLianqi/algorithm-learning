@@ -11,7 +11,7 @@ public:
         for(int i = 0; i < nums.size(); i++) {
             auto iter = umap.find(target - nums[i]);
             if(iter != umap.end()) {
-                return {iter->second,  i};
+                return {iter->second, i};
             }
             umap[nums[i]] = i;
         }
